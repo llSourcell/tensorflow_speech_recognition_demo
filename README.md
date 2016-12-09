@@ -30,4 +30,4 @@ The weekly challenge is from the last video, it's still running! Check it out [h
 
 Credits
 ===========
-Credit for the vast majority of code here goes to [pannouse](https://github.com/pannous). I've merely created a wrapper to get people started. 
+Credit for the vast majority of code here goes to [pannouse](https://github.com/pannous). I've merely created a wrapper to get people started!
