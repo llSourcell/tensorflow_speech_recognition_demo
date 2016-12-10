@@ -9,11 +9,13 @@ import wave
 import numpy
 import numpy as np
 import skimage.io  # scikit-image
+import librosa
+import matplotlib
+# try:
+#
+# except:
+#   print("pip install librosa ; if you want mfcc_batch_generator")
 
-try:
-  import librosa
-except:
-  print("pip install librosa ; if you want mfcc_batch_generator")
 # import extensions as xx
 from random import shuffle
 from six.moves import urllib
@@ -80,7 +82,7 @@ def maybe_download(file, work_directory):
     # os.system('ln -s '+work_directory)
   if os.path.exists(filepath):
     print('Extracting %s to %s' % ( filepath, work_directory))
-    os.system('tar xf '+filepath)
+    os.system('tar xf %s -C %s' % ( filepath, work_directory))
     print('Data ready!')
   return filepath.replace(".tar","")
 
